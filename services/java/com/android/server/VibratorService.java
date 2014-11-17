@@ -244,7 +244,7 @@ public class VibratorService extends IVibratorService.Stub
             return;
         }
         if (Settings.Global.getInt(mContext.getContentResolver(),
-                    Settings.Global.BATTERY_SAVER_VIBRATE_DISABLE, 0) != 0) {
+                    Settings.Global.BATTERY_SAVER_VIBRATE_DISABLE, 0) == 1) {
             return;
         }
         verifyIncomingUid(uid);
