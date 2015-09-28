@@ -77,6 +77,10 @@
   <java-symbol type="anim" name="slide_in_left_no_fade" />
   <java-symbol type="anim" name="slide_out_right_no_fade" />
 
+  <!-- UI theme mode -->
+  <java-symbol type="integer" name="config_uiThemeMode" />
+  <java-symbol type="string" name="theme_auto_switch_mode_error" />
+
   <!-- Power menu -->
   <java-symbol type="drawable" name="ic_lock_screenrecord" />
   <java-symbol type="string" name="global_action_screenrecord" />
