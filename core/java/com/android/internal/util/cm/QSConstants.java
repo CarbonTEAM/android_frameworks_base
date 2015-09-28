@@ -62,6 +62,7 @@ public class QSConstants {
     public static final String TILE_HEADS_UP = "heads_up";
     public static final String TILE_AMBIENT_DISPLAY = "ambient_display";
     public static final String TILE_SYNC = "sync";
+    public static final String TILE_TRDS = "trds";
     public static final String TILE_SLIM_FLOATS = "slim_floats";
     public static final String TILE_SLIMACTION = "slimaction";
 
@@ -116,6 +117,7 @@ public class QSConstants {
         STATIC_TILES_AVAILABLE.add(TILE_HEADS_UP);
         STATIC_TILES_AVAILABLE.add(TILE_AMBIENT_DISPLAY);
         STATIC_TILES_AVAILABLE.add(TILE_SYNC);
+        STATIC_TILES_AVAILABLE.add(TILE_TRDS);
         STATIC_TILES_AVAILABLE.add(TILE_SLIM_FLOATS);
         STATIC_TILES_AVAILABLE.add(TILE_SLIMACTION);
 
