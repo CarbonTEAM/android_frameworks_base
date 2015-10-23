@@ -211,7 +211,7 @@ public final class ShutdownThread extends Thread {
                                     ? com.android.internal.R.string.reboot_title
                                     : com.android.internal.R.string.power_off);
 
-            if (!advancedReboot) {
+            if (!advancedReboot || mRebootSafeMode) {
                 confirmDialogBuilder.setMessage(resourceId);
             } else {
                 if (instant) {
@@ -254,7 +254,7 @@ public final class ShutdownThread extends Thread {
     }
 
     private static void handleDialog(Context context, int selected, boolean advancedReboot) {
-        if (advancedReboot) {
+        if (!mRebootSafeMode && advancedReboot) {
 
             if (selected != ListView.INVALID_POSITION) {
                 String actions[] = context.getResources().getStringArray(
